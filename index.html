@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" onclick="logoin()">ورود</button>
+                <button class="toggle-btn" onclick="register()">ثبت نام</button>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                    <li><a href="#" class="fab fa-facebook-f"></a></li>
+                </ul>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="نام کاربری با ایمیل">
+                <input type="password" class="input-field" placeholder="پسورد شما">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">فراموشم نکن</label>
+                <input type="submit" value="ورود">
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="نام کاربری">
+                <input type="text" class="input-field" placeholder=" ایمیل">
+                <input type="password" class="input-field" placeholder="پسورد شما">
+                <input type="password" class="input-field" placeholder="تکرار پسورد ">
+                <input type="submit" value="ثبت نام">
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+</html>

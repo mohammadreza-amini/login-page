@@ -41,6 +41,7 @@ body {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    overflow: hidden;
 }
 
 .button-box{
@@ -55,7 +56,7 @@ body {
      position: relative;
 }
 
-.toggle-btn{
+.toggle-btn1{
     background: transparent;
     font-family: 'vazir';
     border: none;
@@ -64,10 +65,19 @@ body {
     outline: none;
     position: relative;
 }
+.toggle-btn2{
+    background: transparent;
+    font-family: 'vazir';
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
 
 #btn{
     background: linear-gradient(rgb(238, 95, 77) , rgb(209, 42, 42));
-    width: 110px;
+    width: 115px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -77,6 +87,11 @@ body {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 .social{
@@ -149,13 +164,29 @@ body {
 .input-group{
     width: 100%;
     padding: 0 25px;
-    margin-top: 30px;
+    margin-top: 20px;
     position: absolute;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
-.input-group .input-field{
+.input-group .input-field1{
     width: 100%;
     margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.input-group .input-field2{
+    width: 100%;
+    margin: 5px 0;
     padding: 10px;
     border: 1px solid #777;
     border-radius: 30px;
@@ -176,6 +207,7 @@ body {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    margin-top: 15px;
     padding: 8px;
     cursor: pointer;
 }
@@ -193,4 +225,8 @@ body {
 
 #register{
     right: 450px;
+}
+
+#login{
+    right: 0;
 }
